@@ -21,7 +21,7 @@ const RowMovies = ({ title, fetchURL,rowId }) => {
     }
 
     return (
-        <>
+        <div key={rowId}>
             <h2 className='p-4 font-bold text-white md:text-xl'>
                 {title}
             </h2>
@@ -42,7 +42,7 @@ const RowMovies = ({ title, fetchURL,rowId }) => {
                 onClick={sliderRight}
                 />
             </div>
-        </>
+        </div>
     )
 }
 
